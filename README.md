@@ -1,4 +1,4 @@
-##Spark mini project
+## Spark mini project
 
 - Jdk 1.8
 - Scala.version 2.11.7
