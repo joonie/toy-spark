@@ -10,7 +10,7 @@
 
 - Auto Build & Spark-submit Script
 
-  -  <details><summary>~/script/build.sh [class] [jar] [intput-file] ...</summary>
+  <details><summary>~/script/build.sh [class] [jar] [intput-file] ...</summary>
      <div markdown="1">
      ./build.sh sparkcollection.acumulator.AccumulatorMain ~/share/accumulator/scala-park-sample-1.0-SNAPSHOT.jar /user/irteamsu/input/statePopulation.csv
      </div></details>
