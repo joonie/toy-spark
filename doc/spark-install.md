@@ -41,5 +41,23 @@
       ```sh
       ftp> type binary 
       ```
-
       
+- 빌드
+
+  - Maven 설치
+
+    - wget http://apache.mirror.cdnetworks.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+
+    - tar -xvzf ./apache-maven-3.6.3-bin.tar.gz, 심볼릭 링크 연결 -> ~/apps/maven3
+
+    - bash_profile
+
+    - ```shell
+      PATH=$PATH:$HOME/:$HOME/bin:$MAVEN_HOME/bin
+      ```
+
+    - mvn -version
+
+  - Maven 빌드
+
+    - mvn package -Dmaven.test.skip=true
