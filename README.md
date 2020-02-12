@@ -13,7 +13,7 @@
   - ~/script/build.sh [class] [jar] [intput-file] ...
 
   ```
-  ./build.sh sparkcollection.acumulator.AccumulatorMain /home1/irteamsu/share/accumulator/scala-park-sample-1.0-SNAPSHOT.jar /user/irteamsu/input/statePopulation.csv
+  ./build.sh sparkcollection.acumulator.AccumulatorMain ~/share/accumulator/scala-park-sample-1.0-SNAPSHOT.jar /user/irteamsu/input/statePopulation.csv
   ```
     
 - study doc
