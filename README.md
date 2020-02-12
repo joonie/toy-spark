@@ -10,17 +10,11 @@
 
 - Auto Build & Spark-submit Script
 
-  - ~/script/build.sh [class] [jar] [intput-file] ...
+  -  <details><summary>~/script/build.sh [class] [jar] [intput-file] ...</summary>
+     <div markdown="1">
+     ./build.sh sparkcollection.acumulator.AccumulatorMain ~/share/accumulator/scala-park-sample-1.0-SNAPSHOT.jar /user/irteamsu/input/statePopulation.csv
+     </div></details>
 
-  ```
-  ./build.sh sparkcollection.acumulator.AccumulatorMain ~/share/accumulator/scala-park-sample-1.0-SNAPSHOT.jar /user/irteamsu/input/statePopulation.csv
-  ```
     
 - study doc
   - https://github.com/joonie/scalaStudy
-  
-  
- <details><summary>asd</summary>
- <div markdown="1">
- ./build.sh sparkcollection.acumulator.AccumulatorMain /home1/irteamsu/share/accumulator/scala-park-sample-1.0-SNAPSHOT.jar /user/irteamsu/input/statePopulation.csv
- </div></details>
