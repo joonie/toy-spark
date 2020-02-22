@@ -15,7 +15,7 @@ object StreamBasicV1 {
     val ssc = new StreamingContext(conf, Seconds(10))
 
     //디렉토리 경로
-    val fileStream = ssc.textFileStream("hdfs://dev-shop-collection-nn-ncl:50070/user/irteamsu/input/stream")
+    val fileStream = ssc.textFileStream("hdfs://dev-shop-collection-nn-ncl.nfra.io:8020/user/irteamsu/input/stream")
 
     fileStream.foreachRDD(rdd => println("[result] : "+rdd.count()))
 
