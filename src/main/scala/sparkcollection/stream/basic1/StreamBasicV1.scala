@@ -6,6 +6,8 @@ import org.apache.spark.streaming._
 
 /**
  * @author 손영준 (youngjun.son@navercorp.com)
+ *
+ * ./build.sh sparkcollection.stream.basic1.StreamBasicV1
  */
 object StreamBasicV1 {
   def main(args: Array[String]): Unit = {
@@ -13,8 +15,8 @@ object StreamBasicV1 {
     val ssc = new StreamingContext(conf, Seconds(10))
 
     //디렉토리 경로
-//    val fileStream = ssc.textFileStream("/user/irteamsu/input/stream")
-    val fileStream = ssc.textFileStream("/home1/irteamsu/work/spark/streamfiles")
+    val fileStream = ssc.textFileStream("/user/irteamsu/input/stream")
+//    val fileStream = ssc.textFileStream("/home1/irteamsu/work/spark/streamfiles")
 
     fileStream.foreachRDD(rdd => println("[result] : "+rdd.count()))
 
