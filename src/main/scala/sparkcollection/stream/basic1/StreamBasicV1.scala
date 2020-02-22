@@ -13,7 +13,8 @@ object StreamBasicV1 {
     val ssc = new StreamingContext(conf, Seconds(10))
 
     //디렉토리 경로
-    val fileStream = ssc.textFileStream("/user/irteamsu/input/stream")
+//    val fileStream = ssc.textFileStream("/user/irteamsu/input/stream")
+    val fileStream = ssc.textFileStream("/home1/irteamsu/work/spark/streamfiles")
 
     fileStream.foreachRDD(rdd => println("[result] : "+rdd.count()))
 
