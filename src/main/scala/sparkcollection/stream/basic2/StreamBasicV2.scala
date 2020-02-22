@@ -15,7 +15,7 @@ object StreamBasicV2 {
     val ssc = new StreamingContext(conf, Seconds(5))
 
     //디렉토리 경로
-    val fileStream = ssc.textFileStream("/user/irteamsu/input/stream")
+    val fileStream = ssc.textFileStream("hdfs://dev-shop-collection-nn-ncl:8020/user/irteamsu/input/stream")
 
     val rdd_split = fileStream.foreachRDD(RDD => RDD.flatMap(line => line.split(" ")))
 
