@@ -8,6 +8,7 @@ import org.apache.spark.streaming._
  * @author 손영준 (youngjun.son@navercorp.com)
  *
  * ./build.sh sparkcollection.stream.basic1.StreamBasicV1
+ * (중요) 스트림의 경우 신규파일만 영향을 받음으로 테스트 시 해당 경로에 파일을 넣어줘야한다.
  */
 object StreamBasicV1 {
   def main(args: Array[String]): Unit = {
