@@ -15,7 +15,7 @@ object StreamBasicV1 {
     //디렉토리 경로
     val fileStream = ssc.textFileStream("/user/irteamsu/input/stream")
 
-    fileStream.foreachRDD(rdd => println(rdd.count()))
+    fileStream.foreachRDD(rdd => println("[result] : "+rdd.count()))
 
     //스트림 시작
     ssc.start()
