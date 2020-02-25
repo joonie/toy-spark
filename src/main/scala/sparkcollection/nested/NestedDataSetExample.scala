@@ -8,7 +8,6 @@ import org.apache.spark.sql.SparkSession
  */
 object NestedDataSetExample {
   def main(args: Array[String]): Unit = {
-    val jsonPath = args(0)
 
     val conf = new SparkConf()
     val spark = SparkSession
@@ -16,6 +15,8 @@ object NestedDataSetExample {
       .appName("NestedDataSet")
       .config(conf)
       .getOrCreate()
+
+    val jsonPath = args(0)
 
     import spark.implicits._
 
