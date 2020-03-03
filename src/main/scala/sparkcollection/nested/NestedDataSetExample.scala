@@ -17,8 +17,8 @@ object NestedDataSetExample {
       .config(conf)
       .getOrCreate()
 
-//    val jsonPath = args(0)
-    val jsonPath = "src/resource/data/datamodeling/NestedJson.json"
+    val jsonPath = args(0)
+//    val jsonPath = "/user/irteamsu/input/NestedJson.json"
 
     import spark.implicits._
 
