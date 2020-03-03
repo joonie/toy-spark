@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 
 /**
  * @author 손영준 (youngjun.son@navercorp.com)
- * ./build.sh sparkcollection.nested.NestedDataSetExample /user/irteamsu/input/json_sample1
+ * ./build.sh sparkcollection.nested.NestedDataSetExample /user/irteamsu/input/NestedJson.json
  */
 object NestedDataSetExample {
   def main(args: Array[String]): Unit = {
@@ -24,7 +24,7 @@ object NestedDataSetExample {
 
     val jsonDf = spark.read.json(jsonPath)
     jsonDf.foreach(row => {
-      val group = row.getAs("group")
+      val group = row.getAs[String]("group")
       println("row : " + row + ", group : "+group)
     })
 
