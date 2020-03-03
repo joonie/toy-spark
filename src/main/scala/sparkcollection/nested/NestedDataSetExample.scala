@@ -5,6 +5,7 @@ import org.apache.spark.sql.SparkSession
 
 /**
  * @author 손영준 (youngjun.son@navercorp.com)
+ * ./build.sh sparkcollection.nested.NestedDataSetExample /user/irteamsu/input/json_sample1
  */
 object NestedDataSetExample {
   def main(args: Array[String]): Unit = {
@@ -16,7 +17,8 @@ object NestedDataSetExample {
       .config(conf)
       .getOrCreate()
 
-    val jsonPath = args(0)
+//    val jsonPath = args(0)
+    val jsonPath = "src/resource/data/datamodeling/NestedJson.json"
 
     import spark.implicits._
 
