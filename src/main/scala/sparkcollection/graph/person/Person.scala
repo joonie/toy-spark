@@ -1,4 +1,4 @@
-package sparkcollection.graph
+package sparkcollection.graph.person
 
 /**
  * @author 손영준 (youngjun.son@navercorp.com)

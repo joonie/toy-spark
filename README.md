@@ -15,6 +15,8 @@
      ./build.sh sparkcollection.acumulator.AccumulatorMain /home1/irteamsu/share/accumulator/scala-park-sample-1.0-SNAPSHOT.jar /user/irteamsu/input/statePopulation.csv
      </div></details>
 
+- hdfs input script
+   - ~/work/spark/input.sh user.txt
     
 - study doc
   - https://github.com/joonie/scalaStudy
