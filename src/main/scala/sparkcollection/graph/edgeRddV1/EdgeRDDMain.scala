@@ -16,6 +16,6 @@ object EdgeRDDMain {
         (fields(0).toLong, User(fields(1), fields(2)))
       }
 
-    println(users.take(10))
+    users.take(10)
   }
 }
