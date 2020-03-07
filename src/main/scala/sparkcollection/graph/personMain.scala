@@ -10,24 +10,25 @@ object personMain {
     val mary = Person("Marry")
     val dan = Person("Dan")
 
-    john.numberOfFriends()
+
+    println(john.numberOfFriends())
 
     john.friends += ken
-    john.numberOfFriends()
+    println(john.numberOfFriends())
 
     ken.friends += mary
-    ken.numberOfFriends()
+    println(ken.numberOfFriends())
 
     mary.friends += dan
-    mary.numberOfFriends()
+    println(mary.numberOfFriends())
 
-    john.isFriend(ken)
-    john.isFriend(mary)
-    john.isFriend(dan)
+    println(john.isFriend(ken))
+    println(john.isFriend(mary))
+    println(john.isFriend(dan))
 
-    john.isConnectedWithin2Steps(ken)
-    john.isConnectedWithin2Steps(mary)
-    john.isConnectedWithin2Steps(dan)
+    println(john.isConnectedWithin2Steps(ken))
+    println(john.isConnectedWithin2Steps(mary))
+    println(john.isConnectedWithin2Steps(dan))
   }
 
 }
