@@ -4,7 +4,7 @@ package sparkcollection.graph
  * @author 손영준 (youngjun.son@navercorp.com)
  */
 object personMain {
-  def main(args: Array[String]) = {
+  def main(args: Array[String]): Unit = {
     val john = Person("Jone")
     val ken = Person("Ken")
     val mary = Person("Marry")
