@@ -6,6 +6,11 @@ import org.apache.spark.sql.SparkSession
 /**
  * @author 손영준 (youngjun.son@navercorp.com)
  * ./build.sh sparkcollection.nested.NestedDataSetExample /user/irteamsu/input/NestedJson.json
+ *
+ * Collect
+ * Return all the elements of the dataset as an array at the driver program.
+ * This is usually useful after a filter or other operation that returns a sufficiently small subset of the data.
+ *
  */
 object NestedDataSetExample {
   def main(args: Array[String]): Unit = {
