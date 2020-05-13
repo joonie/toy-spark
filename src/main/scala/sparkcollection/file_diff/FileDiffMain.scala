@@ -14,7 +14,7 @@ object FileDiffMain {
     val conf = new SparkConf()
     val spark = SparkSession
       .builder()
-      .appName("aggregation")
+      .appName("fileDiffMain")
       .config(conf)
       .getOrCreate()
 
