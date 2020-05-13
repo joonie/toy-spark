@@ -20,5 +20,15 @@ object FileDIffMain {
 
     val diffDF = afterDF.except(beforeDF)
     diffDF.write.csv("/user/irteamsu/input/ad/diff")
+
+
+
+    //
+
+    val before = spark.read.csv("/user/irteam/collection/advertisement/product/2020051209")
+    val after = spark.read.csv("/user/irteam/collection/advertisement/product/2020051309")
+    val diff = after.except(before)
+    diff.count
+    diff.write.csv("/user/irteam/collection/advertisement/product_diff/20200512")
   }
 }
