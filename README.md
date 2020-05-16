@@ -22,7 +22,7 @@
   - https://github.com/joonie/scalaStudy
 
 
-python 
+## python 
 - version Python 3.6.8
 - python [command] 
   - added .bash_profile 'alias python=python3'
