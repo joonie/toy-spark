@@ -20,3 +20,13 @@
     
 - study doc
   - https://github.com/joonie/scalaStudy
+
+
+python 
+- version Python 3.6.8
+- python [command] 
+  - added .bash_profile 'alias python=python3'
+- python script path
+  - ~/src/resource/script
+- test file path
+  - ~/work/python
