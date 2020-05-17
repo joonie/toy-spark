@@ -32,13 +32,15 @@ finance_data = [item.get_text().strip() for item in finance_html.select('td')]
 #print(finance_data) #['66,220', '84,521', '107,713', '', '23,317' ...
 
 finance_data = np.array(finance_data)
-finance_data.resize(len(finance_index), 10)
+finance_data.resize(len(finance_index), 10) #dataframe(row size x column size)
+finance_date = annual_date + quarter_date #sum annual_date with quarter_date
 
-finance_date = annual_date + quarter_date
 
+#make dataframe using finance_data, finance_index, finance_date
 finance = pd.DataFrame(data=finance_data[0:,0:], index=finance_index, columns=finance_date)
 
 annual_finance = finance.iloc[:, :4]
 quarter_finance = finance.iloc[:, 4:]
 
+#print(finance)
 print(annual_finance)
