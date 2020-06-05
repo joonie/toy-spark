@@ -27,6 +27,10 @@
 - python [command] 
   - added .bash_profile 'alias python=python3'
 - python script path
-  - ~/src/resource/script
+  - ~/src/resource/script 
 - test file path
   - ~/work/python
+  
+## Ref.
+https://thegurus.tech/hadoop-python/
+https://arrow.apache.org/docs/index.html
