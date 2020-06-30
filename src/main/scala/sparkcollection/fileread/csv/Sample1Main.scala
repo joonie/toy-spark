@@ -16,7 +16,7 @@ object Sample1Main {
 
     val flightData2015 = spark.read.option("inferSchema", "true").option("header", "true").csv("/user/irteamsu/input/2015-summary.csv")
 
-    println("[result]")
-    println("res count -> " + flightData2015.groupBy("DEST_COUNTRY_NAME").count())
+    println("result ->")
+    flightData2015.groupBy("DEST_COUNTRY_NAME").count().show()
   }
 }
