@@ -8,10 +8,9 @@ import org.apache.spark.{SparkConf, SparkContext}
  */
 object Sample1Main {
   def main(args: Array[String]) : Unit = {
-    val conf = new SparkConf().setAppName("sample1")
+    val conf = new SparkConf()
     val spark = SparkSession
       .builder()
-      .appName("sample1")
       .config(conf)
       .getOrCreate()
 
@@ -19,7 +18,7 @@ object Sample1Main {
 
     print("[result]")
     flightData2015.take(3)
-    print(flightData2015.take(3))
+    print("res " + flightData2015.take(3))
 
   }
 }
