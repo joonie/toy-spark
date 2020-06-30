@@ -17,6 +17,9 @@ object Sample1Main {
 
     val flightData2015 = spark.read.option("inferSchema", "true").option("header", "true").csv("/user/irteamsu/input/2015-summary.csv")
 
+    print("[result]")
     flightData2015.take(3)
+    print(flightData2015.take(3))
+
   }
 }
