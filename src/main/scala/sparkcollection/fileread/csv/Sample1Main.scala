@@ -11,7 +11,7 @@ object Sample1Main {
     val conf = new SparkConf().setAppName("sample1")
     val spark = SparkSession
       .builder()
-      .appName("fileDiffMain")
+      .appName("sample1")
       .config(conf)
       .getOrCreate()
 
