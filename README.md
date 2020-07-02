@@ -21,6 +21,9 @@
 - study doc
   - https://github.com/joonie/scalaStudy
 
+- Zeppelin
+  - http://10.105.197.53:8080/
+
 
 ## python 
 - version Python 3.6.8
